@@ -1,8 +1,24 @@
 .speech-bubble {
+    width: 30%;
     display: flex;
     position: relative;
     background-image: linear-gradient(#e8e8e8, #ffffff);
     border-radius: 15px;
-    padding: 30px 40px 30px 40px;
-    box-shadow: 15px 20px 25px;
-    }
+    padding: 10px 20px 10px 20px;
+    box-shadow: 5px 10px 15px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 10%;
+    height: 0;
+    border: 32px solid transparent;
+    border-top-color: #fff;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -16px;
+    margin-bottom: -32px;
+}
